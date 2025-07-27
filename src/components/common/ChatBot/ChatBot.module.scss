@@ -1,5 +1,5 @@
 .chatbotContainer {
-  position: absolute;
+  position: fixed;
   bottom: var(--spacing-xl);
   right: var(--spacing-xl);
   z-index: 1000;
@@ -44,7 +44,7 @@
 
 .chatWindow {
   position: absolute;
-  bottom: 80px;
+  bottom: 0px;
   right: 0;
   width: 350px;
   height: 500px;
