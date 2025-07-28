@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './ChatBot.module.scss';
 
-const ChatBot = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const ChatBot = ({ isOpen, onClose }) => {
+
   const [messages, setMessages] = useState([
     {
       id: 1,
@@ -53,14 +53,6 @@ const ChatBot = () => {
 
   return (
     <div className={styles.chatbotContainer}>
-      {/* Floating Action Button */}
-      <button
-        className={`${styles.fab} ${isOpen ? styles.active : ''}`}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <i className={`fas ${isOpen ? 'fa-times' : 'fa-comments'}`}></i>
-      </button>
-
       {/* Chat Window */}
       <div className={`${styles.chatWindow} ${isOpen ? styles.open : ''}`}>
         <div className={styles.chatHeader}>
@@ -73,6 +65,9 @@ const ChatBot = () => {
               <span className={styles.status}>Online</span>
             </div>
           </div>
+          <button className={styles.closeButton} onClick={onClose}>
+            <i className="fas fa-times"></i>
+          </button>
         </div>
 
         <div className={styles.chatMessages}>
