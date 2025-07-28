@@ -39,10 +39,13 @@
       font-size: 2rem;
       color: var(--accent-red);
     }
-    
-    &:hover {
+    span{
       color: var(--primary-blue-light);
     }
+    
+    // &:hover {
+    //   color: var(--primary-blue-light);
+    // }
   }
 }
 
