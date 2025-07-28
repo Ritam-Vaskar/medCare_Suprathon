@@ -2,7 +2,7 @@
   position: fixed;
   bottom: var(--spacing-xl);
   right: var(--spacing-xl);
-  z-index: 1000;
+  z-index: 100;
   
   @media (max-width: 768px) {
     bottom: var(--spacing-lg);
@@ -162,7 +162,7 @@
 // Mobile responsive
 @media (max-width: 768px) {
   .fabContainer {
-    bottom: 80px; // Account for potential mobile navigation
+    bottom: 50px; // Account for potential mobile navigation
   }
   
   .fabMain {

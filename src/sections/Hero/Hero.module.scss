@@ -74,6 +74,7 @@
   @media (max-width: 480px) {
     padding: 0 var(--spacing-sm);
     gap: var(--spacing-lg);
+    margin-top: 2rrem;
   }
 }
 
@@ -214,7 +215,6 @@
 
 .heroImage {
   position: relative;
- 
   
   @media (max-width: 968px) {
     order: 1;
